@@ -27,11 +27,18 @@
       6. 请选择凭证方式：选择1 Cloudflare Token（推荐）
          请输入 Cloudflare Tunnel Token（以 eyJ 开头）： 刚刚复制的token
          
+      关闭：systemctl stop cloudflared
+      状态：systemctl status cloudflared -l
+      启动：systemctl start cloudflared
+      关闭：systemctl stop cloudflared
+      重启：systemctl restart cloudflared
       查看日志： journalctl -u cloudflared -f
+      服务日志 (后端崩溃等)：journalctl -f -u cloudflared
       重启服务： systemctl restart cloudflared
+      重新执行此脚本(选择2)可卸载
       重新执行此脚本(选择2)可卸载
       
       ```
-
+      
       
 
